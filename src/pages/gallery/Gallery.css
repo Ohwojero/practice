@@ -1,0 +1,13 @@
+.gallery-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    margin-top: 3rem;
+}
+.gallery-content img{
+    width: 350px;
+    height: 200px;
+    margin-inline: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

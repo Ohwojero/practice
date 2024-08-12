@@ -1,0 +1,18 @@
+.trainer-containers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.train p{
+    margin: 1rem 0 1rem;
+}
+.train h3{
+    margin-top: 10px;
+}
+.train-socials a{
+    font-size: 28px;
+}
+.train-img img{
+    height: 100%;
+    border-radius: 10px;
+}

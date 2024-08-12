@@ -1,0 +1,34 @@
+
+.section-val{
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 6rem;
+}
+.values-image img{
+    width: 400px;
+    border-radius: 20px;
+    border: 4px solid #B33771;
+}
+
+.values-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.values-right p{
+    margin: 1rem 0 2rem;
+}
+.values-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    
+}
+.value-card small{
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+.value-card{
+   width:fit-content;
+   display: grid;
+   place-items: center;
+}

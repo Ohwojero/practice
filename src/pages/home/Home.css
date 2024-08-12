@@ -1,0 +1,217 @@
+.program-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.programs-program h4{
+    margin: 1rem 0 1rem;
+    text-align: center;
+}
+.programs-program small{
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+.programs-program a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*-------------------------FAQS Section------------------*/
+
+
+.faqs-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+}
+.title{
+    margin-bottom: 3rem;
+}
+
+.faq-art{
+    padding: 20px;
+    background: linear-gradient(to left, #B33771, #FC427B);
+}
+.ask-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-icon{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 21px;
+}
+.faq-art p{
+    margin: 1rem 0 3rem;
+}
+/*------------------------TESTIMONIALS ---------------------------*/
+.test-head{
+    margin-bottom: 3rem;
+}
+
+.testimonials{
+    width: 50rem;
+    margin-inline: auto;
+}
+.test-head{
+    justify-content: center;
+}
+
+card .test{
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+   
+}
+card .test-avatar{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -70px;
+    left:calc(50% -2rem);
+}
+.test-quote{
+    margin: 1rem 0 2rem;
+    font-style: italic;
+}
+.test-btn{
+    margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 1rem;
+}
+.one{
+    border: none;
+    
+}
+.footer{
+    background: #B33771;
+    margin-top: 7rem;
+    padding-top: 5rem;
+}
+.footer-container{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+}
+.footer-container article{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+}
+.footer-container article h4{
+    margin-bottom:  0.6rem;
+    font-size: 1rem;
+}
+.socials{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.socials a{
+    background:#6D214F;
+    padding: 10px;
+    height: 2.6rem;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.footer-copyright{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.socials a:hover{
+border:2px solid#FC427B;
+}
+
+
+header{
+
+    height: 40rem;
+    overflow: hidden;
+    border-bottom: 2px solid ;
+}
+
+
+/*---------------------------Header top for all the page -----------------*/
+.header-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.header-bg{
+    position: absolute;
+    width: 100%;
+}
+.header-bg img{
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.header-content{
+    position: relative;
+    width: 44%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.header-content h2{
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width:1024px) {
+    .main-header{
+        height: fit-content;
+        padding: 1rem 0;
+        
+    }
+    .main-circle{
+        display: none;
+    }
+    .program-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-circle{
+        grid-template-columns: 1fr;
+    }
+}   
+
+@media screen and (max-width:768px) {
+    .main-header{
+        margin-top: 0;
+        padding: 1rem 0;
+        height: 100vh;
+        grid-template-columns: 1fr;
+
+    }
+    .main-circle{
+        display: none;
+    }
+    .main-image img{
+        display: none;
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+
+}

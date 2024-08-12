@@ -1,0 +1,14 @@
+.contact-wrapper{
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+}
+.contact-wrapper a{
+    font-size: 35px;
+    background: #B33771;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}

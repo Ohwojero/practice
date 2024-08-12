@@ -1,0 +1,128 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+     display: grid;
+     place-items: center;
+     background: #B33771;
+     position: fixed;
+     top: 0;
+     left: 0;
+    z-index: 100;
+    box-shadow: 6px 0 6px rgba(0,0,0,0.5);
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*---------------Only show on small Device  */
+.btn-toggle{
+    display: none;
+}
+.logo{
+    width: 60px;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+    align-items: center;
+}
+.nav-links a{
+    padding: 10px;
+}
+
+.nav-links a:hover{
+    background: #6D214F;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+/*Media Queries ( Medium and small Device) */
+
+@media screen and (max-width:1024px){
+    .btn-toggle{
+        display:inline-block;
+        background: transparent;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background: white;
+        border: none;
+        padding: 3px 5px;
+        border-radius: 50%;
+        
+    }
+
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        gap: 0;
+        perspective: 400px;
+    }
+
+    .nav-links li{
+        height: 4rem;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4);
+        animation: navAnimation 600ms ease forwards;
+        transform-origin: top;
+        opacity: 0;
+        transform: rotateX('90deg');
+    }
+    .nav-links li:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .nav-links li:nth-child(3){
+        animation-delay: 400ms;
+    }
+
+    .nav-links li:nth-child(4){
+        animation-delay: 600ms;
+    }
+
+    .nav-links li:nth-child(5){
+        animation-delay: 800ms;
+    }
+    .nav-links li:nth-child(6){
+        animation-delay: 1s;
+    }
+    .nav-links li:nth-child(7){
+        animation-delay: 1.2s;
+    }
+
+    @keyframes navAnimation {
+        to{
+            transform: rotateX(0);
+            opacity: 1;
+        }
+
+    }
+
+    .nav-links li a{
+        background: #B33771;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 1rem 3rem;
+    }
+    .show-nav{
+        display: flex;
+    }
+
+    .hide-nav{
+        display: none;
+    }
+
+
+}

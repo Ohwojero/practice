@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat, sans-serif;
+    line-height: 1.5;
+    overflow-x: none;
+    background: #6D214F;
+    color: white;
+    padding-top: 5rem;
+   
+}
+
+.container{
+    width: 85%;
+    max-width: 1920px;
+    margin-inline: auto;
+}
+h1, h2, h3, h4, h5{
+    line-height: 1.2;
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn{
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(100deg, #B33771 0.46%, #FC427B);
+}
+
+.btn:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+section{
+    margin-top: 10rem;
+}
+
+.secton-head{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.secton-head span{
+    background: #B33771;
+    padding: 10px;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+card{
+    background: transparent;
+    border: 2px solid#B33771;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius:  0 3rem 0 3rem;
+}
+card:hover{
+   background: linear-gradient(100deg, #B33771 0.46%, #FC427B);
+    border:  2px solid transparent ;
+    
+    
+}
+card span{
+    width: 3rem;
+    height: 3rem;
+    background: #B33771;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem ;
+    margin-inline: auto;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+card:hover span{
+    background: linear-gradient(100deg, #B33771 0.46%, #FC427B);
+}
+
+
+@media screen and (max-width:1024px) {
+    .container
+    {
+    width: 95%;   
+
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+   
+
+
+    h1{
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+   
+}

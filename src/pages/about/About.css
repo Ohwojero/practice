@@ -1,0 +1,26 @@
+.image-story{
+   
+   overflow: hidden;
+   transform: skew(15deg);
+   transition: 0.5s;
+}
+.image-story img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.image-story:nth-child(2){
+    transform: skew(-15deg);
+}
+
+.image-story:hover{
+    transform: skew(0);
+}
+.story-content h1{
+    margin-bottom: 1rem;
+}
+.story-container, .vision-container, .mission-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
